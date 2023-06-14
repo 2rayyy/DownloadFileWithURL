@@ -30,6 +30,13 @@ cd your-repo
 - `file_url`: The URL of the file you want to download.
 - `destination`: The local path where you want to save the downloaded file.
 - `proxies` (optional): If you need to use proxies, provide the appropriate proxy details in the format shown in the example.
+- proxies = {
+        "http": "your-http-proxy:port",
+        "https": "your-https-proxy:port",
+        "ftp": "your-ftp-proxy:port"
+    }
+   Replace `"your-http-proxy:port"`, `"your-https-proxy:port"`, and `"your-ftp-proxy:port"` with the respective proxy details. If you don't require a specific proxy type, you can omit it from the dictionary.
+
 
 5. Save the changes.
 
