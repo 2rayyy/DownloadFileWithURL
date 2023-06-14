@@ -12,14 +12,16 @@ file_url = "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.57
 destination = "chrome-win32.zip"
 
 # Specify your proxy details (optional)
-http_proxy = "webguard.posten.no:8080"
-https_proxy = "webguard.posten.no:8080"
-ftp_proxy = "webguard.posten.no:8080"
+http_proxy = "proxy:8080"
+https_proxy = "proxy:8080"
+ftp_proxy = "proxy:8080"
 
+#if you are not using proxies, remove the variable called proxies
 proxies = {
     "http": http_proxy,
     "https": https_proxy,
     "ftp": ftp_proxy
 }
 
+#again - if you are not using proxies, remove the variable called proxies
 download_file(file_url, destination, proxies)
